@@ -11,7 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+logBucket: 'gs://amplified-asset-426508-e7-tfstate'
+serviceAccount: '333995508011-compute@developer.gserviceaccount.com'
 
 steps:
 - id: 'branch name'
@@ -90,6 +91,4 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
-options:
-  serviceAccount: '333995508011-compute@developer.gserviceaccount.com'
-  logsBucket: 'gs://amplified-asset-426508-e7-tfstate'
+
