@@ -11,9 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-substitutions:
-  _SERVICE_ACCOUNT: '333995508011-compute@developer.gserviceaccount.com'
-  _LOG_BUCKET: 'gs://amplified-asset-426508-e7-tfstate'
+
 
 steps:
 - id: 'branch name'
@@ -92,4 +90,13 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'N1_HIGHCPU_8'
+  diskSizeGb: 100
+  substitutionOption: 'ALLOW_LOOSE'
+
+substitutions:
+  _SERVICE_ACCOUNT: '333995508011-compute@developer.gserviceaccount.com'
+  _LOG_BUCKET: 'gs://amplified-asset-426508-e7-tfstate'
 
