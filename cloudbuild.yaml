@@ -91,12 +91,12 @@ steps:
       fi
 # [END tf-apply]      
 options:
+  machineType: 'E2_HIGHCPU_8'
+  region: 'us-east1'
   logging: CLOUD_LOGGING_ONLY
-  machineType: 'N1_HIGHCPU_8'
   diskSizeGb: 100
   substitutionOption: 'ALLOW_LOOSE'
 
 substitutions:
   _SERVICE_ACCOUNT: '333995508011-compute@developer.gserviceaccount.com'
   _LOG_BUCKET: 'gs://amplified-asset-426508-e7-tfstate'
-
