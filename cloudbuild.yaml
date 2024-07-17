@@ -90,3 +90,6 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
+options:
+  serviceAccount: '333995508011-compute@developer.gserviceaccount.com'
+  logsBucket: 'gs://amplified-asset-426508-e7-tfstate'
